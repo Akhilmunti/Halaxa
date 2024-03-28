@@ -1,0 +1,30 @@
+Initialization :
+    1) Include the file 'Stub.php' into your PHP program.
+    2) Create a 'Stub' object with the relevant auth key.
+
+USAGE :
+
+    1) For Application Stub:
+
+        Call function 'getApplication' on the stub object , specifying the API Address and the return data format (JSON or XML).
+
+        Call:
+            getApplication($apiAddress, $returnDataFormat)
+
+            where,
+                $returnDataFormat = 1         -> for JSON Data format
+                $returnDataFormat = 2         -> for XML Data format
+
+    2) For Requirement Stub:
+    
+        Call function 'addRequirement' with the apiAddress and the relevant requirement data.
+
+        Sample requirementData for addRequirement() :
+
+        { "requirementName": "Your requirement name", "title": "Your Job Title", "description": "Your Job Description", "candidateProfile": "Test Candidate profile", "salary": { "currency": "USD", "min": 80000, "max": 80000, "showToJobseeker":1 } , "otherSalary": "Other Salary Details", "experience": { "min":30, "max": 30 } , "keywords": ["java", "Test"], "locations": { "cityIds": ["258", "258"], "otherCity": ["Other City Name", "Other City Name"], "countryIds": [ { "id": "180", "city": "OtherCountry"} , { "id": "180" } ], "otherCountry": ["Test"] }, "createdBy": "arpit.jain", "industry": 8, "functionalArea": 1, "role": "1.1", "hiringFor": { "name": "Test Employer", "showToJobseeker": 0 } , "visibilty": { "visibleTo": 3, "userNames": ["arpit.jain"] } ,"sendNotificationMail": 1, "vacancies": 2, "referenceCode": "123", "ug": { "type": 1, "courseIds": ["2"], "specIds": ["2.0"], "relation": 0 } , "pg": { "type": 1, "courseIds": ["2"], "specIds": ["2.0"], "relation": 1 } , "ppg": { "type": 1, "courseIds": ["2"],"specIds": ["2.1"] } , "questionnaireName": "asdf", "contact": { "person": "Contact Person", "number": "9999999999", "companyWebsite": "http://www.xyz.com", "aboutCompany": "ABOUT COMPANY TEXT", "showToJobseeker": 1 }, "postOn": [{ "platformType": 12, "forward": { "emails": ["rajat.dutta@naukri.com","ram.sevak@naukri.com"], "showToJobseeker": 0 }, "refresh": { "frequency": 1, "startDate": "1493884713", "stopDate": "1493884713" }, "responseMode": { "type": 2, "fromDate": "1493884713", "toDate": "1493884713", "start": { "time": 8, "period": "PM" }, "externalUrl":"https://csm.naukri.com", "companyUrl": "http:/internal.com", "allowSendQuery" : 1, "naukriRecEmail" : "xyz@gmail.com", "address":{ "name":"Primary Address", "addCompanyName":1 }}}]}
+
+        The "requirementName" field should be unique for each requirement. 
+        The fields startDate, stopDate, fromDate and toDate are UNIX timestamps.
+
+For more details about the requirementData fields, please refer RequirementDataFields.pdf
+

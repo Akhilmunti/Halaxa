@@ -1,0 +1,133 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24 Jan, 2020, 6:43:31 PM
+    Author     : Akhil Munti
+*/
+@font-face {
+    font-family: mainFont;
+    src: url("http://localhost/Halaxa/social/assets/fonts/Poppins-Regular.ttf");
+}
+@font-face {
+    font-family: boldFont;
+    src: url("http://localhost/Halaxa/social/assets/fonts/Poppins-SemiBold.ttf");
+}
+body{
+    font-family: mainFont !important;
+}
+.theme-font{
+    font-family: mainFont !important;
+}
+li a{
+    font-family: boldFont !important;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: boldFont !important;
+}
+p{
+    font-family: mainFont !important;
+    color: #000000 !important
+}
+.btn-default{
+    background-color: #2A3F54 !important;
+    border-color: #000000 !important;
+    color: #ffffff !important;
+}
+.btn-default:hover{
+    background-color: #DFF0D8 !important;
+    border-color: none !important;
+    color: #000000 !important;
+}
+.btn-default:active{
+    background-color: #DFF0D8 !important;
+    border-color: none !important;
+    color: #000000 !important;
+}
+
+.btn-dark{
+    background-color: #00C3AE !important;
+    border-color: #DFF0D8 !important;
+    color: #ffffff !important;
+}
+.btn-dark:hover{
+    background-color: #DFF0D8 !important;
+    border-color: none !important;
+    color: #000000 !important;
+}
+.btn-dark:active{
+    background-color: #DFF0D8 !important;
+    border-color: none !important;
+    color: #000000 !important;
+}
+
+.border-right{
+    border-right: 2px solid #00C3AE !important;
+}
+
+.ml-1{
+    margin-left: 10px !important;
+}
+
+.mt-profile{
+    margin-top: 25px !important;
+}
+
+.comment-back{
+    background-color: #EDEDED !important;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.x_panel{
+    -moz-box-shadow: 0 0 2px #888;
+    -webkit-box-shadow: 0 0 2px #888;
+    box-shadow: 0 0 2px #888;
+}
+
+.box-shadow-all-2{
+    -moz-box-shadow: 0 0 1px #888;
+    -webkit-box-shadow: 0 0 1px #888;
+    box-shadow: 0 0 1px #888;
+}
+
+.comment-back p{
+    color: #ffffff;
+}
+
+.custom-file-upload {
+    border:  #ccc;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 10px
+}    
+.avatar{
+    border-radius: 50% !important;
+    width: 45px !important;
+    height: 45px !important;
+}
+
+.comment-form{
+/*    background-color: #DFF0D8 !important;*/
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+    border: none !important;
+}
+
+img.avatar-circle {
+    height: 32px;
+    width: 32px;
+    float: left;
+    display: inline-block;
+    border-radius: 50%;
+    padding: 2px;
+    margin-right: 2px;
+    background: #f7f7f7;
+    border: 1px solid #e6e6e6;
+}

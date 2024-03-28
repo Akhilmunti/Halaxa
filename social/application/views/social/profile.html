@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- Meta, title, CSS, favicons, etc. -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Foodlinked Social</title>
+
+<!-- Bootstrap -->
+<link href="../../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Font Awesome -->
+<link href="../../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<!-- NProgress -->
+<link href="../../vendors/nprogress/nprogress.css" rel="stylesheet">
+<!-- Dropzone.js -->
+<link href="../../vendors/dropzone/dist/min/dropzone.min.css" rel="stylesheet">
+<!-- Custom Theme Style -->
+<link href="../../build/css/custom.min.css" rel="stylesheet">
+<link href="../override-classes.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="nav-md">
+<div class="container body">
+  <div class="main_container">
+    <div class="col-md-3 left_col menu_fixed">
+      <div class="left_col scroll-view">
+        <div class="navbar nav_title" style="border: 0;"> <a href="home.html" class="site_title"><i class="fa fa-share"></i> <span>Foodlinked Social</span></a> </div>
+        <div class="clearfix"></div>
+        
+        <!-- menu profile quick info -->
+        <div class="profile clearfix">
+          <div class="profile_pic"> <img src="../images/ayman.jpg" alt="..." class="img-circle profile_img"> </div>
+          <div class="profile_info"> <span>Welcome Guest,</span>
+            <h2><a href="login.html" class="light">Login or Register</a></h2>
+          </div>
+        </div>
+        <!-- /menu profile quick info --> 
+        
+        <br />
+        
+        <!-- sidebar menu -->
+        <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+          <div class="menu_section">
+            <h3>General</h3>
+            <ul class="nav side-menu">
+              <li><a href="home.html"><i class="fa fa-bell-o"></i> My Wall</a></li>
+              <li><a href="profile-detail.html"><i class="fa fa-list-alt"></i> View My Profile</a></li>
+              <li><a href="invite-friends.html"><i class="fa fa-envelope-o"></i> Invite Your Friends</a></li>
+              <!--<li><a href="../vendor/login.html"><i class="fa fa-industry"></i> Vendor</a></li>
+                <li><a href="../buyer/login.html"><i class="fa fa-exchange"></i> Buyer</a></li>-->
+            </ul>
+          </div>
+        </div>
+        <!-- /sidebar menu --> 
+        
+        <!-- /menu footer buttons -->
+        <div class="sidebar-footer hidden-small"> <a data-toggle="tooltip" data-placement="top" title="Settings"> <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> </a> <a data-toggle="tooltip" data-placement="top" title="FullScreen"> <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span> </a> <a data-toggle="tooltip" data-placement="top" title="Lock"> <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span> </a> <a data-toggle="tooltip" data-placement="top" title="Logout" href="#"> <span class="glyphicon glyphicon-off" aria-hidden="true"></span> </a> </div>
+        <!-- /menu footer buttons --> 
+      </div>
+    </div>
+    
+    <!-- top navigation -->
+    <div class="top_nav">
+      <div class="nav_menu">
+        <nav> 
+          <!-- <div class="nav toggle"> 
+            <a id="menu_toggle"><i class="fa fa-bars"></i></a> 
+          </div> -->
+          <div class="col-md-3">
+            <form class="navbar-form" role="search">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Browse Members" name="q">
+                <div class="input-group-btn">
+                  <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <ul class="nav navbar-nav navbar-right">
+            <li> <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> More <span class=" fa fa-angle-down"></span> </a>
+              <ul class="dropdown-menu dropdown-usermenu pull-right">
+                <li> <a href="#"> <span class="badge bg-red pull-right">50%</span> <span>Settings</span> </a> </li>
+                <li><a href="#">Help</a></li>
+              </ul>
+            </li>
+            <li role="presentation"> <a href="#" class="info-number" aria-expanded="false">Recruit </a></li>
+            <li role="presentation"> <a href="../vendor/landing-page.html" class="info-number" aria-expanded="false">Sell </a></li>
+            <li role="presentation"> <a href="../buyer/landing-page.html" class="info-number" aria-expanded="false">Buy </a></li>
+            <li> <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> <img src="../images/ayman.jpg" alt="">Guest <span class=" fa fa-angle-down"></span> </a>
+              <ul class="dropdown-menu dropdown-usermenu pull-right">
+                <li><a href="profile-detail.html"> Profile</a></li>
+                <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log In</a></li>
+              </ul>
+            </li>
+            <li role="presentation" class="dropdown"> <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false"> <i class="fa fa-envelope-o"></i> <span class="badge bg-green">6</span> </a>
+              <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+                <li> <a> <span class="image"><img src="../images/ayman.jpg" alt="Profile Image" /></span> <span> <span>Ayman Sheet</span> <span class="time">3 mins ago</span> </span> <span class="message"> Film festivals used to be do-or-die moments for movie makers. They were where... </span> </a> </li>
+                <li> <a> <span class="image"><img src="../images/ayman.jpg" alt="Profile Image" /></span> <span> <span>Ayman Sheet</span> <span class="time">3 mins ago</span> </span> <span class="message"> Film festivals used to be do-or-die moments for movie makers. They were where... </span> </a> </li>
+                <li> <a> <span class="image"><img src="../images/ayman.jpg" alt="Profile Image" /></span> <span> <span>Ayman Sheet</span> <span class="time">3 mins ago</span> </span> <span class="message"> Film festivals used to be do-or-die moments for movie makers. They were where... </span> </a> </li>
+                <li> <a> <span class="image"><img src="../images/ayman.jpg" alt="Profile Image" /></span> <span> <span>Ayman Sheet</span> <span class="time">3 mins ago</span> </span> <span class="message"> Film festivals used to be do-or-die moments for movie makers. They were where... </span> </a> </li>
+                <li>
+                  <div class="text-center"> <a> <strong>See All Alerts</strong> <i class="fa fa-angle-right"></i> </a> </div>
+                </li>
+              </ul>
+            </li>
+            <li role="presentation"> <a href="jobs.html" class="info-number" aria-expanded="false">Jobs </a> </li>
+            <li role="presentation" class="dropdown"> <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false"> <i class="fa fa-bell-o"></i> <span class="badge bg-green">4</span> </a>
+              <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+                <li> <a> <span class="image"><img src="../images/ayman.jpg" alt="Profile Image" /></span> <span> <span>Ayman Sheet</span> <span class="time">3 mins ago</span> </span> <span class="message"> Film festivals used to be do-or-die moments for movie makers. They were where... </span> </a> </li>
+                <li> <a> <span class="image"><img src="../images/ayman.jpg" alt="Profile Image" /></span> <span> <span>Ayman Sheet</span> <span class="time">3 mins ago</span> </span> <span class="message"> Film festivals used to be do-or-die moments for movie makers. They were where... </span> </a> </li>
+                <li> <a> <span class="image"><img src="../images/ayman.jpg" alt="Profile Image" /></span> <span> <span>Ayman Sheet</span> <span class="time">3 mins ago</span> </span> <span class="message"> Film festivals used to be do-or-die moments for movie makers. They were where... </span> </a> </li>
+                <li> <a> <span class="image"><img src="../images/ayman.jpg" alt="Profile Image" /></span> <span> <span>Ayman Sheet</span> <span class="time">3 mins ago</span> </span> <span class="message"> Film festivals used to be do-or-die moments for movie makers. They were where... </span> </a> </li>
+                <li>
+                  <div class="text-center"> <a> <strong>See All Alerts</strong> <i class="fa fa-angle-right"></i> </a> </div>
+                </li>
+              </ul>
+            </li>
+            <li role="presentation"> <a href="#" class="info-number" aria-expanded="false">Communities</a> </li>
+            <li class="social-nav-active" role="presentation"> <a href="network.html" class="info-number" aria-expanded="false">My Network</a> </li>
+            <li role="presentation"> <a href="home.html" class="info-number" aria-expanded="false">My Wall </a> </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- /top navigation --> 
+    
+    <!-- page content -->
+    <div class="right_col" role="main">
+      <div class="">
+        <div class="clearfix"></div>
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="x_panel">
+              <div class="x_title">
+                <h2>Edit Profile</h2>
+                <ul class="nav navbar-right panel_toolbox">
+                  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a> </li>
+                  <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#">Settings 1</a> </li>
+                      <li><a href="#">Settings 2</a> </li>
+                    </ul>
+                  </li>
+                  <li><a class="close-link"><i class="fa fa-close"></i></a> </li>
+                </ul>
+                <div class="clearfix"></div>
+              </div>
+              <div class="x_content">
+                <div id="wizard" class="form_wizard wizard_horizontal">
+                  <ul class="wizard_steps">
+                    <li> <a href="#step-1"> <span class="step_no">1</span> <span class="step_descr"> Personal</span> </a> </li>
+                    <li> <a href="#step-2"> <span class="step_no">2</span> <span class="step_descr">Experience</span> </a> </li>
+                    <li> <a href="#step-3"> <span class="step_no">3</span> <span class="step_descr"> Education</span> </a> </li>
+                    <li> <a href="#step-4"> <span class="step_no">4</span> <span class="step_descr"> Skills</span> </a> </li>
+                    <li> <a href="#step-5"> <span class="step_no">5</span> <span class="step_descr"> Education</span> </a> </li>
+                  </ul>
+                  <div id="step-1">
+                    <form class="form-horizontal form-label-left">
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">First Name <span class="required">*</span> </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input type="text" id="first-name" required="required" class="form-control col-md-7 col-xs-12">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Last Name <span class="required">*</span> </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input type="text" id="last-name" name="last-name" required="required" class="form-control col-md-7 col-xs-12">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Gender</label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <div id="gender" class="btn-group" data-toggle="buttons">
+                            <label class="btn btn-default" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
+                              <input type="radio" name="gender" value="male">
+                              &nbsp; Male &nbsp; </label>
+                            <label class="btn btn-primary" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
+                              <input type="radio" name="gender" value="female">
+                              Female </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Date Of Birth <span class="required">*</span> </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Marital Status </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input id="birthday" class="form-control col-md-7 col-xs-12" required="required" type="text">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Website </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input id="birthday" class="form-control col-md-7 col-xs-12" required="required" type="text">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">About Yourself </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <textarea id="birthday" class="form-control col-md-7 col-xs-12" required type="text"></textarea>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Upload Resume </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input type="file" name="pic" accept="image/*">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Upload Photo </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <div class="avatar-upload">
+                            <div class="avatar-edit">
+                              <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                              <label for="imageUpload"></label>
+                            </div>
+                            <div class="avatar-preview">
+                              <div id="imagePreview" style="background-image: url(http://i.pravatar.cc/500?img=7);"> </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                    <div class="col-md-3  col-md-offset-5">
+                      <div class="sidebar-widget">
+                        <h4>Profile Completion</h4>
+                        <span class="chart" data-percent="40"> <span class="percent"></span> </span> </div>
+                    </div>
+                  </div>
+                  <div id="step-2">
+                    <div class="col-md-4 text-center profile_details">
+                      <div class="well profile_view">
+                        <div class="col-md-12">
+                          <h2>Title</h2>
+                          <p><strong>Company Name</strong></p>
+                          <ul class="list-unstyled">
+                            <li><i class="fa fa-calendar-o"></i> Date Period: </li>
+                            <li><i class="fa fa-map-pin"></i> Location #: </li>
+                          </ul>
+                        </div>
+                        <div class="col-xs-12 bottom">
+                          <div class="col-md-6 col-md-offset-3">
+                            <button type="button" class="btn btn-primary btn-xs"> <i class="fa fa-user"> </i> View Profile </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 text-center profile_details">
+                      <div class="well profile_view">
+                        <div class="col-md-12">
+                          <h2>Title</h2>
+                          <p><strong>Company Name</strong></p>
+                          <ul class="list-unstyled">
+                            <li><i class="fa fa-calendar-o"></i> Date Period: </li>
+                            <li><i class="fa fa-map-pin"></i> Location #: </li>
+                          </ul>
+                        </div>
+                        <div class="col-xs-12 bottom">
+                          <div class="col-md-6 col-md-offset-3">
+                            <button type="button" class="btn btn-primary btn-xs"> <i class="fa fa-user"> </i> View Profile </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="step-3">
+                    <div class="row">
+                      <div class="col-md-4 profile_details text-center">
+                        <div class="well profile_view">
+                          <div class="col-md-12">
+                            <h2>Degree and Field of Study</h2>
+                            <p><strong>School or university</strong></p>
+                            <ul class="list-unstyled">
+                              <li><i class="fa fa-calendar-o"></i> Date Period: </li>
+                              <li><i class="fa fa-map-pin"></i> Location #: </li>
+                            </ul>
+                          </div>
+                          <div class="col-xs-12 bottom">
+                            <div class="col-md-4 col-md-offset-4">
+                              <button type="button" class="btn btn-primary btn-xs"> <i class="fa fa-user"> </i> View Profile </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="step-4">
+                    <div class="row">
+                      <div class="col-md-4 col-md-offset-1 profile_details">
+                        <div class="well profile_view">
+                          <div class="col-md-12">
+                            <h2>Your Unique Talent</h2>
+                            <p><strong>How did you acquire it? what did it result in?</strong></p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 profile_details">
+                        <div class="well profile_view">
+                          <div class="col-md-12">
+                            <h2>Your Unique Talent</h2>
+                            <p><strong>How did you acquire it? what did it result in?</strong></p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-md-offset-1 profile_details">
+                        <div class="well profile_view">
+                          <div class="col-md-12">
+                            <h2>Your Unique Talent</h2>
+                            <p><strong>How did you acquire it? what did it result in?</strong></p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 profile_details">
+                        <div class="well profile_view">
+                          <div class="col-md-12">
+                            <h2>Your Unique Talent</h2>
+                            <p><strong>How did you acquire it? what did it result in?</strong></p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-10 col-md-offset-1">
+                        <button type="button" class="btn btn-success btn-xs"> <i class="fa fa-plus"> </i> Add</button>
+                        <button type="button" class="btn btn-primary btn-xs"> <i class="fa fa-trash"> </i> Delete </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="step-5">
+                    <form class="form-horizontal form-label-left">
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Certification Name <span class="required">*</span> </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input type="text" id="first-name" required="required" class="form-control col-md-7 col-xs-12">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Certification Authority <span class="required">*</span> </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input type="text" id="last-name" name="last-name" required="required" class="form-control col-md-7 col-xs-12">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">License Number <span class="required">*</span> </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input id="birthday" class="form-control col-md-7 col-xs-12" required="required" type="number">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">From </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input id="birthday" class="datepicker form-control col-md-7 col-xs-12" required="required" type="date">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">To </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input id="birthday" class="datepicker form-control col-md-7 col-xs-12" required="required" type="date">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Certification URL </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input id="birthday" class="form-control col-md-7 col-xs-12" required="required" type="text">
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <!-- End SmartWizard Content --> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /page content --> 
+    
+    <!-- footer content -->
+    <footer>
+      <div class="pull-right"> <a href="#">Foodlinked Social</a> </div>
+      <div class="clearfix"></div>
+    </footer>
+    <!-- /footer content --> 
+  </div>
+</div>
+
+<!-- jQuery --> 
+<script src="../../vendors/jquery/dist/jquery.min.js"></script> 
+<!-- Bootstrap --> 
+<script src="../../vendors/bootstrap/dist/js/bootstrap.min.js"></script> 
+<!-- FastClick --> 
+<script src="../../vendors/fastclick/lib/fastclick.js"></script> 
+<!-- NProgress --> 
+<!-- bootstrap-progressbar --> 
+<script src="../../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script> 
+<script src="../../vendors/nprogress/nprogress.js"></script> 
+<!-- jQuery Smart Wizard --> 
+<script src="../../vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js"></script> 
+<!-- Custom Theme Scripts --> 
+<!-- Dropzone.js --> 
+<script src="../../vendors/dropzone/dist/min/dropzone.min.js"></script> 
+<!-- morris.js --> 
+<script src="../../vendors/raphael/raphael.min.js"></script> 
+<script src="../../vendors/morris.js/morris.min.js"></script> 
+<!-- gauge.js --> 
+<script src="../../vendors/gauge.js/dist/gauge.min.js"></script> 
+<!-- bootstrap-progressbar --> 
+<script src="../../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script> 
+<!-- Skycons --> 
+<script src="../../vendors/skycons/skycons.js"></script> 
+<!-- Flot --> 
+<script src="../../vendors/Flot/jquery.flot.js"></script> 
+<script src="../../vendors/Flot/jquery.flot.pie.js"></script> 
+<script src="../../vendors/Flot/jquery.flot.time.js"></script> 
+<script src="../../vendors/Flot/jquery.flot.stack.js"></script> 
+<script src="../../vendors/Flot/jquery.flot.resize.js"></script> 
+<!-- Flot plugins --> 
+<script src="../../vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script> 
+<script src="../../vendors/flot-spline/js/jquery.flot.spline.min.js"></script> 
+<script src="../../vendors/flot.curvedlines/curvedLines.js"></script> 
+<!-- DateJS --> 
+<script src="../../vendors/DateJS/build/date.js"></script> 
+<!-- bootstrap-daterangepicker --> 
+<script src="../../vendors/moment/min/moment.min.js"></script> 
+<script src="../../vendors/bootstrap-daterangepicker/daterangepicker.js"></script> 
+<!-- ECharts --> 
+<script src="../../vendors/echarts/dist/echarts.min.js"></script> 
+<script src="../../vendors/echarts/map/js/world.js"></script> 
+<!-- easy-pie-chart --> 
+<script src="../../vendors/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js"></script> 
+<script src="../../build/js/custom.min.js"></script> 
+<script>
+	function readURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        reader.onload = function(e) {
+            $('#imagePreview').css('background-image', 'url('+e.target.result +')');
+            $('#imagePreview').hide();
+            $('#imagePreview').fadeIn(650);
+        }
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+$("#imageUpload").change(function() {
+    readURL(this);
+});
+	</script>
+</body>
+</html>

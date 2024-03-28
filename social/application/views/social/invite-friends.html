@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!-- Meta, title, CSS, favicons, etc. -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Foodlinked Social</title>
+        <!-- Bootstrap -->
+        <link href="../../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Font Awesome -->
+        <link href="../../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <!-- NProgress -->
+        <link href="../../vendors/nprogress/nprogress.css" rel="stylesheet">
+        <!-- iCheck -->
+        <link href="../../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+        <!-- bootstrap-wysiwyg -->
+        <link href="../../vendors/google-code-prettify/bin/prettify.min.css" rel="stylesheet">
+        <!-- Select2 -->
+        <link href="../../vendors/select2/dist/css/select2.min.css" rel="stylesheet">
+        <!-- Switchery -->
+        <link href="../../vendors/switchery/dist/switchery.min.css" rel="stylesheet">
+        <!-- starrr -->
+        <link href="../../vendors/starrr/dist/starrr.css" rel="stylesheet">
+        <!-- bootstrap-daterangepicker -->
+        <link href="../../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+        <!-- Custom Theme Style -->
+        <link href="../../build/css/custom.min.css" rel="stylesheet">
+        <link href="../override-classes.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body class="nav-md">
+        <div class="container body">
+            <div class="main_container">
+                <div class="col-md-3 left_col menu_fixed">
+                    <div class="left_col scroll-view">
+                        <div class="navbar nav_title" style="border: 0;"> <a href="home.html" class="site_title"><i class="fa fa-share"></i> <span>Foodlinked Social</span></a> </div>
+                        <div class="clearfix"></div>
+
+                        <!-- menu profile quick info -->
+                        <div class="profile clearfix">
+                            <div class="profile_pic"> <img src="../images/ayman.jpg" alt="..." class="img-circle profile_img"> </div>
+                            <div class="profile_info"> <span>Welcome Guest,</span>
+                                <h2><a href="login.html" class="light">Login or Register</a></h2>
+                            </div>
+                        </div>
+                        <!-- /menu profile quick info --> 
+
+                        <br />
+
+                        <!-- sidebar menu -->
+                        <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                            <div class="menu_section">
+                                <h3>General</h3>
+                                <ul class="nav side-menu">
+                                    <li><a href="home.html"><i class="fa fa-bell-o"></i> My Wall</a></li>
+                                    <li><a href="profile-detail.html"><i class="fa fa-list-alt"></i> View My Profile</a></li>
+                                    <li class="active"><a href="invite-friends.html"><i class="fa fa-envelope-o"></i> Invite Your Friends</a></li>
+                                    <!--<li><a href="../vendor/login.html"><i class="fa fa-industry"></i> Vendor</a></li>
+                                      <li><a href="../buyer/login.html"><i class="fa fa-exchange"></i> Buyer</a></li>-->
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /sidebar menu --> 
+
+                        <!-- /menu footer buttons -->
+                        <div class="sidebar-footer hidden-small"> <a data-toggle="tooltip" data-placement="top" title="Settings"> <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> </a> <a data-toggle="tooltip" data-placement="top" title="FullScreen"> <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span> </a> <a data-toggle="tooltip" data-placement="top" title="Lock"> <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span> </a> <a data-toggle="tooltip" data-placement="top" title="Logout" href="#"> <span class="glyphicon glyphicon-off" aria-hidden="true"></span> </a> </div>
+                        <!-- /menu footer buttons --> 
+                    </div>
+                </div>
+
+                <!-- top navigation -->
+                <div class="top_nav">
+                    <div class="nav_menu">
+                        <nav> 
+                            <!-- <div class="nav toggle"> 
+                              <a id="menu_toggle"><i class="fa fa-bars"></i></a> 
+                            </div> -->
+                            <div class="col-md-3">
+                                <form class="navbar-form" role="search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Browse Members" name="q">
+                                        <div class="input-group-btn">
+                                            <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li> <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> More <span class=" fa fa-angle-down"></span> </a>
+                                    <ul class="dropdown-menu dropdown-usermenu pull-right">
+                                        <li> <a href="#"> <span class="badge bg-red pull-right">50%</span> <span>Settings</span> </a> </li>
+                                        <li><a href="#">Help</a></li>
+                                    </ul>
+                                </li>
+                                <li role="presentation"> <a href="#" class="info-number" aria-expanded="false">Recruit </a></li>
+                                <li role="presentation"> <a href="../vendor/landing-page.html" class="info-number" aria-expanded="false">Sell </a></li>
+                                <li role="presentation"> <a href="../buyer/landing-page.html" class="info-number" aria-expanded="false">Buy </a></li>
+                                <li> <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> <img src="../images/ayman.jpg" alt="">Guest <span class=" fa fa-angle-down"></span> </a>
+                                    <ul class="dropdown-menu dropdown-usermenu pull-right">
+                                        <li><a href="profile-detail.html"> Profile</a></li>
+                                        <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log In</a></li>
+                                    </ul>
+                                </li>
+                                <li role="presentation" class="dropdown"> <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false"> <i class="fa fa-envelope-o"></i> <span class="badge bg-green">6</span> </a>
+                                    <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+                                        <li> <a> <span class="image"><img src="../images/ayman.jpg" alt="Profile Image" /></span> <span> <span>Ayman Sheet</span> <span class="time">3 mins ago</span> </span> <span class="message"> Film festivals used to be do-or-die moments for movie makers. They were where... </span> </a> </li>
+                                        <li> <a> <span class="image"><img src="../images/ayman.jpg" alt="Profile Image" /></span> <span> <span>Ayman Sheet</span> <span class="time">3 mins ago</span> </span> <span class="message"> Film festivals used to be do-or-die moments for movie makers. They were where... </span> </a> </li>
+                                        <li> <a> <span class="image"><img src="../images/ayman.jpg" alt="Profile Image" /></span> <span> <span>Ayman Sheet</span> <span class="time">3 mins ago</span> </span> <span class="message"> Film festivals used to be do-or-die moments for movie makers. They were where... </span> </a> </li>
+                                        <li> <a> <span class="image"><img src="../images/ayman.jpg" alt="Profile Image" /></span> <span> <span>Ayman Sheet</span> <span class="time">3 mins ago</span> </span> <span class="message"> Film festivals used to be do-or-die moments for movie makers. They were where... </span> </a> </li>
+                                        <li>
+                                            <div class="text-center"> <a> <strong>See All Alerts</strong> <i class="fa fa-angle-right"></i> </a> </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li role="presentation"> <a href="jobs.html" class="info-number" aria-expanded="false">Jobs </a> </li>
+                                <li role="presentation" class="dropdown"> <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false"> <i class="fa fa-bell-o"></i> <span class="badge bg-green">4</span> </a>
+                                    <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+                                        <li> <a> <span class="image"><img src="../images/ayman.jpg" alt="Profile Image" /></span> <span> <span>Ayman Sheet</span> <span class="time">3 mins ago</span> </span> <span class="message"> Film festivals used to be do-or-die moments for movie makers. They were where... </span> </a> </li>
+                                        <li> <a> <span class="image"><img src="../images/ayman.jpg" alt="Profile Image" /></span> <span> <span>Ayman Sheet</span> <span class="time">3 mins ago</span> </span> <span class="message"> Film festivals used to be do-or-die moments for movie makers. They were where... </span> </a> </li>
+                                        <li> <a> <span class="image"><img src="../images/ayman.jpg" alt="Profile Image" /></span> <span> <span>Ayman Sheet</span> <span class="time">3 mins ago</span> </span> <span class="message"> Film festivals used to be do-or-die moments for movie makers. They were where... </span> </a> </li>
+                                        <li> <a> <span class="image"><img src="../images/ayman.jpg" alt="Profile Image" /></span> <span> <span>Ayman Sheet</span> <span class="time">3 mins ago</span> </span> <span class="message"> Film festivals used to be do-or-die moments for movie makers. They were where... </span> </a> </li>
+                                        <li>
+                                            <div class="text-center"> <a> <strong>See All Alerts</strong> <i class="fa fa-angle-right"></i> </a> </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li role="presentation"> <a href="#" class="info-number" aria-expanded="false">Communities</a> </li>
+                                <li role="presentation"> <a href="network.html" class="info-number" aria-expanded="false">My Network</a> </li>
+                                <li role="presentation"> <a href="home.html" class="info-number" aria-expanded="false">My Wall </a> </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <!-- /top navigation --> 
+
+                <!-- page content -->
+                <div class="right_col" role="main">
+                    <div class="">
+                        <div class="clearfix"></div>
+                        <div class="row">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div class="x_panel">
+                                        <div class="x_title">
+                                            <h2>Invite Friends</h2>
+                                            <ul class="nav navbar-right panel_toolbox">
+                                                <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a> </li>
+                                                <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                                                    <ul class="dropdown-menu" role="menu">
+                                                        <li><a href="#">Settings 1</a> </li>
+                                                        <li><a href="#">Settings 2</a> </li>
+                                                    </ul>
+                                                </li>
+                                                <li><a class="close-link"><i class="fa fa-close"></i></a> </li>
+                                            </ul>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div class="x_content">
+                                            <div class="row">
+                                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                                    <div class="" role="tabpanel" data-example-id="togglable-tabs">
+                                                        <ul id="myTab" class="nav nav-tabs bar_tabs" role="tablist">
+                                                            <li role="presentation" class="active"><a href="#tab_content1" id="home-tab" role="tab" data-toggle="tab" aria-expanded="true">Social Networks</a> </li>
+                                                            <li role="presentation" class=""><a href="#tab_content2" role="tab" id="profile-tab" data-toggle="tab" aria-expanded="false">Contact</a> </li>
+                                                            <li role="presentation" class=""><a href="#tab_content3" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false">Email</a> </li>
+                                                        </ul>
+                                                        <div id="myTabContent" class="tab-content">
+                                                            <div role="tabpanel" class="tab-pane fade active in" id="tab_content1" aria-labelledby="home-tab"> <img src="../images/Social-media-banner.png" width="100%"/>
+                                                                <div class='share-rectangle'> <span style='margin:0 0 10px;display:block;'>Invite through Social Networks</span> <a class='facebook' onclick='openPopup("https://www.facebook.com/sharer/sharer.php?u=", 640, 430); return false;' rel='nofollow'><span class='square'><i class='fa fa-facebook'></i></span><span class='title'>Facebook</span></a> <a class='twitter' onclick='openPopup("https://twitter.com/intent/tweet?text=Mira estos &amp;via=AlexTorresSk&amp;url=", 640, 430); return false;' rel='nofollow'><span class='square'><i class='fa fa-twitter'></i></span><span class='title'>Twitter</span></a> <a class='gplus' onclick='openPopup("https://plus.google.com/share?url=", 640, 430); return false;' rel='nofollow'><span class='square'><i class='fa fa-google-plus'></i></span><span class='title'>Google+</span></a> <a class='tumblr' onclick='openPopup("https://www.tumblr.com/share/link?url=", 640, 430); return false;' rel='nofollow'><span class='square'><i class='fa fa-tumblr'></i></span><span class='title'>Tumblr</span></a> <a class='pinterest' onclick='openPopup("https://pinterest.com/pin/create/button/?url=", 640, 430); return false;' rel='nofollow'><span class='square'><i class='fa fa-pinterest-p'></i></span><span class='title'>Pinterest</span></a> <a class='digg' onclick='openPopup("https://digg.com/submit?url=", 640, 430); return false;' rel='nofollow'><span class='square'><i class='fa fa-digg'></i></span><span class='title'>Digg</span></a> <a class='linkedin' onclick='openPopup("https://linkedin.com/shareArticle?mini=true&amp;url=", 640, 430); return false;' rel='nofollow'><span class='square'><i class='fa fa-linkedin'></i></span><span class='title'>LinkedIn</span></a> <a class='stumbleupon' onclick='openPopup("https://stumbleupon.com/submit?url=", 640, 430); return false;' rel='nofollow'><span class='square'><i class='fa fa-stumbleupon'></i></span><span class='title'>StumbleUpon</span></a> <a class='delicious' onclick='openPopup("https://delicious.com/post?url=", 640, 430); return false;' rel='nofollow'><span class='square'><i class='fa fa-delicious'></i></span><span class='title'>Deliciuos</span></a> <a class='reddit' onclick='openPopup("https://reddit.com/submit?url=", 640, 430); return false;' rel='nofollow'><span class='square'><i class='fa fa-reddit-alien'></i></span><span class='title'>Reddit</span></a> <a class='whatsapp' onclick='openPopup("whatsapp://send?text=", 640, 430); return false;' rel='nofollow'><span class='square'><i class='fa fa-whatsapp'></i></span><span class='title'>Whatsapp</span></a> <a class='email' href='mailto:?subject='><span class='square'><i class='material-icons'>email</i></span><span class='title'>Email</span></a> <a class='gmail' onclick='openPopup("https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to&amp;su=", 640, 430); return false;' rel='nofollow'><span class='square'><i class='material-icons'>email</i></span><span class='title'>Gmail</span></a> <a class='outlook' onclick='openPopup("https://www.hotmail.msn.com/secure/start?action=compose&amp;to=&amp;subject=", 640, 430); return false;' rel='nofollow'><span class='square'><i class='fa fa-envelope-o'></i></span><span class='title'>Outlook</span></a> <a class='qrcode' onclick='openPopup("https://api.qrserver.com/v1/create-qr-code/?margin=10&amp;size=500x500&amp;data=", 500, 500); return false;' rel='nofollow'><span class='square'><i class='fa fa-qrcode'></i></span><span class='title'>Generate QR</span></a> </div>
+                                                            </div>
+                                                            <div role="tabpanel" class="tab-pane fade" id="tab_content2" aria-labelledby="profile-tab">
+                                                                <div class="share-rectangle"> <span class="text-center">Invite through Social Networks</span>
+                                                                    <div class="form-group">
+                                                                        <div class="col-md-6 col-md-offset-3">
+                                                                            <div class="custom-file-upload"> 
+                                                                                <!--<label for="file">File: </label>-->
+                                                                                <input type="file" id="file" name="myfiles[]" multiple />
+                                                                            </div>
+                                                                        </div>
+                                                                        <br><br><br><br>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div role="tabpanel" class="tab-pane fade" id="tab_content3" aria-labelledby="profile-tab">
+                                                                <div class="share-rectangle"> <span class="text-center">Invite through Email</span>
+                                                                    <div class="row">
+                                                                        <div class="form-group">
+                                                                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Recipients</label>
+                                                                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                                                                <input id="tags_1" type="text" class="tags form-control" value="admin@foodlinked.com" />
+                                                                                <div id="suggestions-container" style="position: relative; float: left; width: 250px; margin: 10px;"></div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Custom Message</label>
+                                                                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                                                                <textarea class="resizable_textarea form-control" placeholder="This text area automatically resizes its height as you fill in more text courtesy of autosize-master it out..."></textarea>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /page content --> 
+
+                <!-- footer content -->
+                <footer>
+                    <div class="pull-right"> <a href="#">Foodlinked Social</a> </div>
+                    <div class="clearfix"></div>
+                </footer>
+                <!-- /footer content --> 
+            </div>
+        </div>
+        <!-- jQuery --> 
+        <script src="../../vendors/jquery/dist/jquery.min.js"></script> 
+        <!-- Bootstrap --> 
+        <script src="../../vendors/bootstrap/dist/js/bootstrap.min.js"></script> 
+        <!-- FastClick --> 
+        <script src="../../vendors/fastclick/lib/fastclick.js"></script> 
+        <!-- NProgress --> 
+        <script src="../../vendors/nprogress/nprogress.js"></script> 
+        <!-- bootstrap-progressbar --> 
+        <script src="../../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script> 
+        <!-- iCheck --> 
+        <script src="../../vendors/iCheck/icheck.min.js"></script> 
+        <!-- bootstrap-daterangepicker --> 
+        <script src="../../vendors/moment/min/moment.min.js"></script> 
+        <script src="../../vendors/bootstrap-daterangepicker/daterangepicker.js"></script> 
+        <!-- bootstrap-wysiwyg --> 
+        <script src="../../vendors/bootstrap-wysiwyg/js/bootstrap-wysiwyg.min.js"></script> 
+        <script src="../../vendors/jquery.hotkeys/jquery.hotkeys.js"></script> 
+        <script src="../../vendors/google-code-prettify/src/prettify.js"></script> 
+        <!-- jQuery Tags Input --> 
+        <script src="../../vendors/jquery.tagsinput/src/jquery.tagsinput.js"></script> 
+        <!-- Switchery --> 
+        <script src="../../vendors/switchery/dist/switchery.min.js"></script> 
+        <!-- Select2 --> 
+        <script src="../../vendors/select2/dist/js/select2.full.min.js"></script> 
+        <!-- Parsley --> 
+        <script src="../../vendors/parsleyjs/dist/parsley.min.js"></script> 
+        <!-- Autosize --> 
+        <script src="../../vendors/autosize/dist/autosize.min.js"></script> 
+        <!-- jQuery autocomplete --> 
+        <script src="../../vendors/devbridge-autocomplete/dist/jquery.autocomplete.min.js"></script> 
+        <!-- starrr --> 
+        <script src="../../vendors/starrr/dist/starrr.js"></script> 
+        <!-- jquery.inputmask --> 
+        <script src="../../vendors/jquery.inputmask/dist/min/jquery.inputmask.bundle.min.js"></script> 
+        <!-- Custom Theme Scripts --> 
+        <script src="../../build/js/custom.min.js"></script> 
+        <script>
+                                        //<![CDATA[
+        //Remove whatsapp and email on desktop, also remove gmail and outlook/hotmail on mobile.
+                                        if (!navigator.userAgent.match(/Mobile|iP(hone|od|ad)|Android|BlackBerry|IEMobile|Kindle|NetFront|Silk-Accelerated|(hpw|web)OS|Fennec|Minimo|Opera M(obi|ini)|Blazer|Dolfin|Dolphin|Skyfire|Zune/)) {
+                                            $(".whatsapp,.email").remove();
+                                        } else {
+                                            $(".gmail,.outlook").remove();
+                                        }
+
+        // Popup
+                                        function openPopup(url, w, h) {
+                                            window.open(url + document.URL, '', 'width=' + w + ',height=' + h + ',top=10,left=10,scrollbars=NO,menubar=NO,titlebar= NO,status=NO,toolbar=NO').focus();
+                                        }
+        //]]>
+        </script>
+        <script>
+            //Reference: 
+//https://www.onextrapixel.com/2012/12/10/how-to-create-a-custom-file-input-with-jquery-css3-and-php/
+            ;
+            (function ($) {
+
+                // Browser supports HTML5 multiple file?
+                var multipleSupport = typeof $('<input/>')[0].multiple !== 'undefined',
+                        isIE = /msie/i.test(navigator.userAgent);
+
+                $.fn.customFile = function () {
+
+                    return this.each(function () {
+
+                        var $file = $(this).addClass('custom-file-upload-hidden'), // the original file input
+                                $wrap = $('<div class="file-upload-wrapper">'),
+                                $input = $('<input type="text" class="file-upload-input" />'),
+                                // Button that will be used in non-IE browsers
+                                $button = $('<button type="button" class="file-upload-button">Select a File</button>'),
+                                // Hack for IE
+                                $label = $('<label class="file-upload-button" for="' + $file[0].id + '">Select a File</label>');
+
+                        // Hide by shifting to the left so we
+                        // can still trigger events
+                        $file.css({
+                            position: 'absolute',
+                            left: '-9999px'
+                        });
+
+                        $wrap.insertAfter($file)
+                                .append($file, $input, (isIE ? $label : $button));
+
+                        // Prevent focus
+                        $file.attr('tabIndex', -1);
+                        $button.attr('tabIndex', -1);
+
+                        $button.click(function () {
+                            $file.focus().click(); // Open dialog
+                        });
+
+                        $file.change(function () {
+
+                            var files = [], fileArr, filename;
+
+                            // If multiple is supported then extract
+                            // all filenames from the file array
+                            if (multipleSupport) {
+                                fileArr = $file[0].files;
+                                for (var i = 0, len = fileArr.length; i < len; i++) {
+                                    files.push(fileArr[i].name);
+                                }
+                                filename = files.join(', ');
+
+                                // If not supported then just take the value
+                                // and remove the path to just show the filename
+                            } else {
+                                filename = $file.val().split('\\').pop();
+                            }
+
+                            $input.val(filename) // Set the value
+                                    .attr('title', filename) // Show filename in title tootlip
+                                    .focus(); // Regain focus
+
+                        });
+
+                        $input.on({
+                            blur: function () {
+                                $file.trigger('blur');
+                            },
+                            keydown: function (e) {
+                                if (e.which === 13) { // Enter
+                                    if (!isIE) {
+                                        $file.trigger('click');
+                                    }
+                                } else if (e.which === 8 || e.which === 46) { // Backspace & Del
+                                    // On some browsers the value is read-only
+                                    // with this trick we remove the old input and add
+                                    // a clean clone with all the original events attached
+                                    $file.replaceWith($file = $file.clone(true));
+                                    $file.trigger('change');
+                                    $input.val('');
+                                } else if (e.which === 9) { // TAB
+                                    return;
+                                } else { // All other keys
+                                    return false;
+                                }
+                            }
+                        });
+
+                    });
+
+                };
+
+                // Old browser fallback
+                if (!multipleSupport) {
+                    $(document).on('change', 'input.customfile', function () {
+
+                        var $this = $(this),
+                                // Create a unique ID so we
+                                // can attach the label to the input
+                                uniqId = 'customfile_' + (new Date()).getTime(),
+                                $wrap = $this.parent(),
+                                // Filter empty input
+                                $inputs = $wrap.siblings().find('.file-upload-input')
+                                .filter(function () {
+                                    return !this.value
+                                }),
+                                $file = $('<input type="file" id="' + uniqId + '" name="' + $this.attr('name') + '"/>');
+
+                        // 1ms timeout so it runs after all other events
+                        // that modify the value have triggered
+                        setTimeout(function () {
+                            // Add a new input
+                            if ($this.val()) {
+                                // Check for empty fields to prevent
+                                // creating new inputs when changing files
+                                if (!$inputs.length) {
+                                    $wrap.after($file);
+                                    $file.customFile();
+                                }
+                                // Remove and reorganize inputs
+                            } else {
+                                $inputs.parent().remove();
+                                // Move the input so it's always last on the list
+                                $wrap.appendTo($wrap.parent());
+                                $wrap.find('input').focus();
+                            }
+                        }, 1);
+
+                    });
+                }
+
+            }(jQuery));
+
+            $('input[type=file]').customFile();
+        </script>
+    </body>
+</html>

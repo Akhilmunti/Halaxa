@@ -1,0 +1,127 @@
+body{
+  background-color: #f5f7fa;
+  color: #657c93
+}
+
+.menu-top{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: #657c93
+}
+
+.right-menu a{
+  font-size: 12px;
+  color: #657c93;
+  margin-left: 5px
+}
+
+.left-menu a{
+  font-size: 12px;
+  color: #657c93;
+  margin-right: 5px
+}
+
+
+.nav-link{
+  font-size: 15px;
+  font-weight: bolder;
+  margin-left: 15px
+}
+
+.section-one{
+  background-color: #000000;
+  padding-top: 80px;
+  padding-bottom: 80px
+}
+
+.section-one h1{
+  color: #ffffff;
+  letter-spacing: 3px;
+}
+
+.btns-section-one>button{
+  margin-top: 50px;
+  margin-bottom: 40px
+}
+
+.section-two{
+  background-color: #ffffff;
+  padding-bottom: 40px;
+  padding-top: 40px
+}
+
+.section-two-menu p{
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.section-three{
+  padding-bottom: 40px;
+  padding-top: 40px
+}
+
+.section-three-menu p{
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000000;
+}
+
+.section-four{
+  background-color: #ffffff;
+  padding-bottom: 40px;
+  padding-top: 40px
+}
+
+.section-four-menu p{
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.circle{
+  background-color: #f2f5f7;
+  border-radius: 50%;
+  padding: 60px;
+}
+
+.footerFoodlinked{
+  background-color: #2f4052;
+  padding-bottom: 40px;
+  padding-top: 40px
+}
+
+.footerFoodlinked h5{
+  color: #ffffff
+}
+
+.footerFoodlinked a{
+  color: #7f8e9c
+}
+
+.footerFoodlinked a:hover{
+  color: #ffffff;
+  text-decoration: none
+}
+
+.footer-menu{
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: #283645;
+  color: #7f8e9c
+}
+
+.footer-menu a{
+  color: #7f8e9c
+}
+
+.footer-menu a:hover{
+  color: #ffffff;
+  text-decoration: none
+}
